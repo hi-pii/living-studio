@@ -1,0 +1,28 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #0a0c17; color: #f6ecff; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, .action { display: inline-block; color: #f6ecff; background: #18152be8; border: 1px solid #b49aff55; border-radius: 6px; padding: .4rem .65rem; font: inherit; text-decoration: none; cursor: pointer; }
+button:disabled { opacity: .65; cursor: default; }
+a:focus-visible, button:focus-visible { outline: 2px solid #e9a6ff; outline-offset: 3px; }
+.artwork { overflow: hidden; }
+#art { position: fixed; inset: 0; }
+canvas { display: block; touch-action: none; }
+.controls, .recognition, .item-feed { position: fixed; z-index: 1; font-size: 11px; }
+.controls { top: 24px; right: 30px; display: flex; gap: 5px; }
+.recognition { top: 64px; right: 30px; text-align: right; line-height: 1.6; padding: 6px; background: #100e22a8; border-radius: 5px; }
+#simulation button { margin-top: 4px; }
+#simulation:not([hidden]) { display: flex; flex-wrap: wrap; gap: 3px; }
+.item-feed { bottom: 29px; left: 30px; display: flex; flex-wrap: wrap; gap: .35rem .65rem; max-width: calc(100vw - 50px); padding: 7px 10px; border-radius: 6px; background: #100e22b5; pointer-events: none; }
+.studio { min-height: 100svh; display: grid; align-items: center; background: radial-gradient(ellipse at 80% 40%, #36204d, transparent 60%), #0a0c17; }
+.studio main { margin: auto; width: min(100% - 3rem, 62rem); padding-block: 3rem; }
+.eyebrow { font-size: .75rem; letter-spacing: .26em; color: #c8adf3; }
+h1 { font-size: clamp(3rem, 11vw, 8rem); line-height: .88; font-weight: 500; letter-spacing: -.07em; margin: 2rem 0; }
+h1 span { font-size: .4em; color: #d7afff; }
+.intro { max-width: 31rem; line-height: 1.6; color: #d6c9e7; }
+.studio .action, .secondary { margin: .6rem .75rem .2rem 0; }
+.secondary { display: inline-block; color: #d7afff; }
+@media (max-width: 650px) {
+  .controls { top: 8px; right: 12px; }
+  .recognition { top: 141px; left: 20px; right: auto; text-align: left; }
+  .item-feed { left: 14px; bottom: 18px; }
+}

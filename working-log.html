@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Working Log — Living Studio</title>
+    <meta name="description" content="A record of experiments, revisions, and the decisions behind the work.">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+    </header>
+    <main id="main" class="wrap">
+      <!-- EDIT: Replace bracketed placeholders with your own content. Copy an article to add an entry. -->
+      <section class="page-heading">
+        <p class="eyebrow">03 / Make, test & reflect</p>
+        <h1>Working Log</h1>
+        <p>A record of experiments, revisions, and the decisions behind the work.</p>
+      </section>
+      <section class="focus-strip" aria-label="Digital Cocoon 2.0">
+        <span class="tag">Net Art 02 · Creative Coding 2.0</span>
+        <a href="cocoon/">Open Digital Cocoon 2.0 ↗</a>
+        <span>Object recognition and hand tracking extend the colour-based recommendation study below.</span>
+      </section>
+      <section id="information-bubble" class="experiment-layout">
+        <div>
+          <div class="art-panel">
+            <canvas data-bubbles="interactive" role="img" aria-label="Interactive bubble study. Click a bubble, or use the colour buttons below for keyboard access.">Use the colour buttons below to change the probability of each bubble colour.</canvas>
+            <div class="art-label">
+              <span>INFORMATION BUBBLE / STUDY 001</span>
+              <span>Live prototype</span>
+            </div>
+          </div>
+          <div class="experiment-controls" aria-label="Choose a bubble colour">
+            <button class="color-button" data-color="0">
+              <span class="swatch" style="--swatch:#d8f397" aria-hidden="true">
+              </span>Choose lime</button>
+              <button class="color-button" data-color="1">
+                <span class="swatch" style="--swatch:#b8a0e6" aria-hidden="true">
+                </span>Choose lilac</button>
+                <button class="color-button" data-color="2">
+                  <span class="swatch" style="--swatch:#f0a684" aria-hidden="true">
+                  </span>Choose peach</button>
+                  <button class="color-button" data-color="3">
+                    <span class="swatch" style="--swatch:#8ecbd7" aria-hidden="true">
+                    </span>Choose blue</button>
+                  </div>
+                  <p class="status" data-probabilities aria-live="polite" aria-atomic="true">
+                  </p>
+                  <div class="actions">
+                    <button class="button secondary" data-reset>Reset choices</button>
+                    <button class="button secondary" data-pause>Pause motion</button>
+                  </div>
+                </div>
+                <div>
+                  <p class="eyebrow">p5.js project / Concept study</p>
+                  <h2>Information Bubble</h2>
+                  <p>Colourful bubbles drift outward from a wand. Clicking a bubble bursts it and increases the chance that its colour appears again. Repeated choices gradually allow certain colours to dominate.</p>
+                  <p>The interaction explores algorithmic recommendation and the formation of a filter bubble / information cocoon.</p>
+                  <aside class="note">This working website preview uses plain JavaScript Canvas. Your p5.js sketch can replace it later. The log below is an unfilled record of the proposed tests; it does not claim they have been completed.</aside>
+                  <a class="text-link" href="feedback.html">View the feedback record ↗</a>
+                </div>
+              </section>
+              <section class="section">
+                <div class="section-top">
+                  <h2>Iterations, not just outcomes.</h2>
+                  <span class="small">Evidence / Reflection / Decision</span>
+                </div>
+                <article class="log-entry">
+                  <div class="log-meta">
+                    <strong>v0.1 / Planned</strong>
+                    <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                  </div>
+                  <div>
+                    <h2>Initial concept</h2>
+                    <p class="placeholder">[Record the first sketch and the question it explores.]</p>
+                    <div class="log-fields">
+                      <dl>
+                        <dt>What I worked on</dt>
+                        <dd>[Describe the task.]</dd>
+                        <dt>Experiment</dt>
+                        <dd>[What did you vary, and what did you observe?]</dd>
+                        <dt>AI involvement</dt>
+                        <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                        <dt>Code / technical test</dt>
+                        <dd>[Link a saved sketch version; record the test and result.]</dd>
+                      </dl>
+                      <dl>
+                        <dt>Failure or problem</dt>
+                        <dd>[What did not work? Add evidence.]</dd>
+                        <dt>Revision</dt>
+                        <dd>[What changed from the previous version?]</dd>
+                        <dt>Decision</dt>
+                        <dd>[What did you keep or reject, and why?]</dd>
+                        <dt>Next step</dt>
+                        <dd>[Describe the next specific test.]</dd>
+                      </dl>
+                    </div>
+                    <div class="evidence">
+                      <strong>Iteration evidence</strong>
+                      <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                    </div>
+                  </article>
+                  <article class="log-entry">
+                    <div class="log-meta">
+                      <strong>v0.2 / Planned</strong>
+                      <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                    </div>
+                    <div>
+                      <h2>Background colour tests</h2>
+                      <p class="placeholder">[Compare background colours and record the effect on contrast and mood.]</p>
+                      <div class="log-fields">
+                        <dl>
+                          <dt>What I worked on</dt>
+                          <dd>[Describe the task.]</dd>
+                          <dt>Experiment</dt>
+                          <dd>[What did you vary, and what did you observe?]</dd>
+                          <dt>AI involvement</dt>
+                          <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                          <dt>Code / technical test</dt>
+                          <dd>[Link a saved sketch version; record the test and result.]</dd>
+                        </dl>
+                        <dl>
+                          <dt>Failure or problem</dt>
+                          <dd>[What did not work? Add evidence.]</dd>
+                          <dt>Revision</dt>
+                          <dd>[What changed from the previous version?]</dd>
+                          <dt>Decision</dt>
+                          <dd>[What did you keep or reject, and why?]</dd>
+                          <dt>Next step</dt>
+                          <dd>[Describe the next specific test.]</dd>
+                        </dl>
+                      </div>
+                      <div class="evidence">
+                        <strong>Iteration evidence</strong>
+                        <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                      </div>
+                    </article>
+                    <article class="log-entry">
+                      <div class="log-meta">
+                        <strong>v0.3 / Planned</strong>
+                        <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                      </div>
+                      <div>
+                        <h2>Bubble shape tests</h2>
+                        <p class="placeholder">[Compare outlines, transparency, sizes, and readability.]</p>
+                        <div class="log-fields">
+                          <dl>
+                            <dt>What I worked on</dt>
+                            <dd>[Describe the task.]</dd>
+                            <dt>Experiment</dt>
+                            <dd>[What did you vary, and what did you observe?]</dd>
+                            <dt>AI involvement</dt>
+                            <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                            <dt>Code / technical test</dt>
+                            <dd>[Link a saved sketch version; record the test and result.]</dd>
+                          </dl>
+                          <dl>
+                            <dt>Failure or problem</dt>
+                            <dd>[What did not work? Add evidence.]</dd>
+                            <dt>Revision</dt>
+                            <dd>[What changed from the previous version?]</dd>
+                            <dt>Decision</dt>
+                            <dd>[What did you keep or reject, and why?]</dd>
+                            <dt>Next step</dt>
+                            <dd>[Describe the next specific test.]</dd>
+                          </dl>
+                        </div>
+                        <div class="evidence">
+                          <strong>Iteration evidence</strong>
+                          <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                        </div>
+                      </article>
+                      <article class="log-entry">
+                        <div class="log-meta">
+                          <strong>v0.4 / Planned</strong>
+                          <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                        </div>
+                        <div>
+                          <h2>Probability system tests</h2>
+                          <p class="placeholder">[Record starting weights, reinforcement rate, and observed colour distribution.]</p>
+                          <div class="log-fields">
+                            <dl>
+                              <dt>What I worked on</dt>
+                              <dd>[Describe the task.]</dd>
+                              <dt>Experiment</dt>
+                              <dd>[What did you vary, and what did you observe?]</dd>
+                              <dt>AI involvement</dt>
+                              <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                              <dt>Code / technical test</dt>
+                              <dd>[Link a saved sketch version; record the test and result.]</dd>
+                            </dl>
+                            <dl>
+                              <dt>Failure or problem</dt>
+                              <dd>[What did not work? Add evidence.]</dd>
+                              <dt>Revision</dt>
+                              <dd>[What changed from the previous version?]</dd>
+                              <dt>Decision</dt>
+                              <dd>[What did you keep or reject, and why?]</dd>
+                              <dt>Next step</dt>
+                              <dd>[Describe the next specific test.]</dd>
+                            </dl>
+                          </div>
+                          <div class="evidence">
+                            <strong>Iteration evidence</strong>
+                            <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                          </div>
+                        </article>
+                        <article class="log-entry">
+                          <div class="log-meta">
+                            <strong>v0.5 / Planned</strong>
+                            <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                          </div>
+                          <div>
+                            <h2>Interaction revision</h2>
+                            <p class="placeholder">[Record changes to click targets, pacing, and keyboard access.]</p>
+                            <div class="log-fields">
+                              <dl>
+                                <dt>What I worked on</dt>
+                                <dd>[Describe the task.]</dd>
+                                <dt>Experiment</dt>
+                                <dd>[What did you vary, and what did you observe?]</dd>
+                                <dt>AI involvement</dt>
+                                <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                                <dt>Code / technical test</dt>
+                                <dd>[Link a saved sketch version; record the test and result.]</dd>
+                              </dl>
+                              <dl>
+                                <dt>Failure or problem</dt>
+                                <dd>[What did not work? Add evidence.]</dd>
+                                <dt>Revision</dt>
+                                <dd>[What changed from the previous version?]</dd>
+                                <dt>Decision</dt>
+                                <dd>[What did you keep or reject, and why?]</dd>
+                                <dt>Next step</dt>
+                                <dd>[Describe the next specific test.]</dd>
+                              </dl>
+                            </div>
+                            <div class="evidence">
+                              <strong>Iteration evidence</strong>
+                              <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                            </div>
+                          </article>
+                          <article class="log-entry">
+                            <div class="log-meta">
+                              <strong>v1.0 / Planned</strong>
+                              <span>[Date: YYYY-MM-DD]<br>[Week number]</span>
+                            </div>
+                            <div>
+                              <h2>Final selected version</h2>
+                              <p class="placeholder">[Record the selected version only after comparing and testing alternatives.]</p>
+                              <div class="log-fields">
+                                <dl>
+                                  <dt>What I worked on</dt>
+                                  <dd>[Describe the task.]</dd>
+                                  <dt>Experiment</dt>
+                                  <dd>[What did you vary, and what did you observe?]</dd>
+                                  <dt>AI involvement</dt>
+                                  <dd>[Tool / model / date / prompt summary, or “none”.]</dd>
+                                  <dt>Code / technical test</dt>
+                                  <dd>[Link a saved sketch version; record the test and result.]</dd>
+                                </dl>
+                                <dl>
+                                  <dt>Failure or problem</dt>
+                                  <dd>[What did not work? Add evidence.]</dd>
+                                  <dt>Revision</dt>
+                                  <dd>[What changed from the previous version?]</dd>
+                                  <dt>Decision</dt>
+                                  <dd>[What did you keep or reject, and why?]</dd>
+                                  <dt>Next step</dt>
+                                  <dd>[Describe the next specific test.]</dd>
+                                </dl>
+                              </div>
+                              <div class="evidence">
+                                <strong>Iteration evidence</strong>
+                                <br>[Add a before / after screenshot, short video, or code excerpt here.]<br>[File / version / change summary / comparison notes.]</div>
+                              </div>
+                            </article>
+                          </section>
+                        </main>
+                        <footer class="footer" data-footer>
+                        </footer>
+                        <noscript>
+                          <p>Navigation: <a href="index.html">Home</a> · <a href="visual-journey.html">Visual Journey</a> · <a href="idea-presentation.html">Idea Presentation</a> · <a href="working-log.html">Working Log</a> · <a href="final-project.html">Final Project</a> · <a href="feedback.html">Feedback</a> · <a href="about.html">About</a>
+                          </p>
+                        </noscript>
+                      </body>
+                    </html>
+
+

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Cocoon 2.0</title>
+<link rel="stylesheet" href="./style.css">
+<script defer src="./vendor/p5.js"></script>
+<script defer src="./vendor/ml5.js"></script>
+<script defer src="./config.js"></script>
+<script defer src="./feed.js"></script>
+<script defer src="./embedding.js"></script>
+<script defer src="./interaction.js"></script>
+<script defer src="./sketch.js"></script>
+</head>
+<body class="artwork">
+<main id="art" aria-label="Digital Cocoon interactive bubble field"></main>
+<nav class="controls" aria-label="Artwork controls">
+<a href="../" class="action">Studio</a>
+<button id="camera">Enable camera</button>
+<button id="reset" title="Reset (R)">Reset</button>
+</nav>
+<aside class="recognition" aria-label="Camera and model status">
+<div id="hand-status">Camera off · click or tap bubbles</div>
+<div id="model-status" role="status">Enable camera to load model</div>
+<div id="object-debug" hidden>
+<div id="object-frames">Camera frames: waiting</div>
+<div id="object-scores">Phone — · Mouse — · Book — · Background —</div>
+</div>
+<div id="simulation" hidden>
+<button data-item="Phone">Phone</button>
+<button data-item="Mouse">Mouse</button>
+<button data-item="Book">Book</button>
+</div>
+</aside>
+<aside class="item-feed" aria-label="Object preferences">
+<span id="Phone">Phone · Locked</span>
+<span id="Mouse">Mouse · Locked</span>
+<span id="Book">Book · Locked</span>
+</aside>
+<noscript>Enable JavaScript to run Digital Cocoon.</noscript>
+</body>
+</html>
+
